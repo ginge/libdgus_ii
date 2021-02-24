@@ -30,10 +30,10 @@ jobs:
         # Path to Doxyfile
         doxyfile-path: "./doc/Doxyfile" # default is ./Doxyfile
         # Working directory
-        working-directory: "." # default is .
+        working-directory: "./doc" # default is .
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./doc/html
+        publish_dir: ./html
