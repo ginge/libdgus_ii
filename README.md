@@ -45,7 +45,7 @@ Compile. Fix my bugs. When you find them please open an issue. (Endianness issue
 
 Contained is main.c example code. This is entirely geared to my personal setup. Use as you wish
 
-`
+```c
 // init the library with our callbacks
 dgus_init(_serial_bytes_available_callback, _serial_recv_byte_callback, _serial_send_data_callback, _serial_recv_packet_callback);
 
@@ -57,13 +57,13 @@ dgus_set_text_padded(0x6000, "Hi. I'm padded with spaces", 32);
 
 // do a partial update of the text
 dgus_set_text(0x6001, "! "); // Hi. I'm padded with spaces => Hi! I'm...
-`
+```
 
 ## Arduino
 
 TODO but tl;dr
 
-`
+```c
 dgus_init(SERIAL1.available, SERIAL1.recv, SERIAL1.write, myapp_packet_received);
 
-`
+```
