@@ -86,14 +86,14 @@ $(document).ready(function(){initNavTree('dgus__control__text_8h_source.html',''
 <div class="title">/github/workspace/dgus_control_text.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="dgus__control__text_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dgus__reg_8h.html">dgus_reg.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dgus_8h.html">dgus.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>__attribute__((packed)) dgus_control_text_display {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="dgus__control__curve_8c.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((packed)) dgus_control_text_display {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  uint16_t vp;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="dgus__reg_8h.html#af6e91e4117be25ead20e5b73e33afc08">dgus_control_position</a> pos;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  uint16_t colour;</div>
@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('dgus__control__text_8h_source.html',''
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  uint8_t reserved0;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} dgus_control_text_display;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8h.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a>(uint16_t addr, uint8_t *buf, uint8_t len);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8c.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a>(uint16_t addr, uint8_t *buf, uint8_t len);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a>(uint16_t addr, <span class="keywordtype">char</span> *text);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8c.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a>(uint16_t addr, <span class="keywordtype">char</span> *text);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8h.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a>(uint16_t addr, uint16_t *vp);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> <a class="code" href="dgus__control__text_8c.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a>(uint16_t addr, uint16_t *vp);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> dgus_set_text_vp(uint16_t addr, uint16_t vp);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -147,9 +147,10 @@ $(document).ready(function(){initNavTree('dgus__control__text_8h_source.html',''
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a> dgus_set_text_encode_mode_distance(uint16_t addr, uint8_t encode_mode, uint8_t vert_distance, uint8_t horiz_distance);</div>
 <div class="ttc" id="adgus_8h_html"><div class="ttname"><a href="dgus_8h.html">dgus.h</a></div><div class="ttdoc">DGUS II LCD Driver.</div></div>
-<div class="ttc" id="adgus__control__text_8h_html_a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><div class="ttname"><a href="dgus__control__text_8h.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a></div><div class="ttdeci">DGUS_RETURN dgus_get_text(uint16_t addr, uint8_t *buf, uint8_t len)</div><div class="ttdoc">Read from VAR address as text Reads in 8 bit data format when using 0x02 GBK.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:26</div></div>
-<div class="ttc" id="adgus__control__text_8h_html_aa1934036cda5858fe304c1e7b9bedb1c"><div class="ttname"><a href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a></div><div class="ttdeci">DGUS_RETURN dgus_set_text(uint16_t addr, char *text)</div><div class="ttdoc">Write text to the address VAR.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:37</div></div>
-<div class="ttc" id="adgus__control__text_8h_html_ad2e99db157df7a2eadd8dbc892b4716e"><div class="ttname"><a href="dgus__control__text_8h.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a></div><div class="ttdeci">DGUS_RETURN dgus_get_text_vp(uint16_t addr, uint16_t *vp)</div><div class="ttdoc">Write text to the address VAR and clear all text after to field length.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:55</div></div>
+<div class="ttc" id="adgus__control__curve_8c_html_ab898071398b359603a35c202e9c65f3b"><div class="ttname"><a href="dgus__control__curve_8c.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a></div><div class="ttdeci">struct __attribute__((packed))</div><div class="ttdoc">position and size of the control</div><div class="ttdef"><b>Definition:</b> dgus_control_curve.c:30</div></div>
+<div class="ttc" id="adgus__control__text_8c_html_a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><div class="ttname"><a href="dgus__control__text_8c.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a></div><div class="ttdeci">DGUS_RETURN dgus_get_text(uint16_t addr, uint8_t *buf, uint8_t len)</div><div class="ttdoc">Read from VAR address as text Reads in 8 bit data format when using 0x02 GBK.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:25</div></div>
+<div class="ttc" id="adgus__control__text_8c_html_aa1934036cda5858fe304c1e7b9bedb1c"><div class="ttname"><a href="dgus__control__text_8c.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a></div><div class="ttdeci">DGUS_RETURN dgus_set_text(uint16_t addr, char *text)</div><div class="ttdoc">Write text to the address VAR.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:36</div></div>
+<div class="ttc" id="adgus__control__text_8c_html_ad2e99db157df7a2eadd8dbc892b4716e"><div class="ttname"><a href="dgus__control__text_8c.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a></div><div class="ttdeci">DGUS_RETURN dgus_get_text_vp(uint16_t addr, uint16_t *vp)</div><div class="ttdoc">Write text to the address VAR and clear all text after to field length.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:54</div></div>
 <div class="ttc" id="adgus__reg_8h_html"><div class="ttname"><a href="dgus__reg_8h.html">dgus_reg.h</a></div><div class="ttdoc">DGUS II LCD Driver. Register and cointrol definitions.</div></div>
 <div class="ttc" id="adgus__reg_8h_html_a2550675a2efa8f92cb2feccdf8f48404"><div class="ttname"><a href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a></div><div class="ttdeci">#define DGUS_RETURN</div><div class="ttdef"><b>Definition:</b> dgus_reg.h:33</div></div>
 <div class="ttc" id="adgus__reg_8h_html_ab32dc8a9476fc0309df9f829f947e44c"><div class="ttname"><a href="dgus__reg_8h.html#ab32dc8a9476fc0309df9f829f947e44c">dgus_control_size</a></div><div class="ttdeci">dgus_control_size</div><div class="ttdef"><b>Definition:</b> dgus_reg.h:112</div></div>
@@ -159,7 +160,7 @@ $(document).ready(function(){initNavTree('dgus__control__text_8h_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dgus__control__text_8h.html">dgus_control_text.h</a></li>
+    <li class="navelem"><b>dgus_control_text.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

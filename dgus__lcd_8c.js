@@ -1,11 +1,9 @@
 var dgus__lcd_8c =
 [
     [ "__attribute__", "dgus__lcd_8c.html#ab898071398b359603a35c202e9c65f3b", null ],
-    [ "_delay", "dgus__lcd_8c.html#a45cba7527e7782a6fcac2d99bb0a866f", null ],
     [ "_polling_read_16", "dgus__lcd_8c.html#a4545b1cae3174617eb905c383fedecdb", null ],
     [ "_polling_wait", "dgus__lcd_8c.html#a2171c18185b079e81d68996a30d54c10", null ],
     [ "_polling_wait_for_ok", "dgus__lcd_8c.html#a4c210e6b18462f0b2b33078373d6c3ef", null ],
-    [ "_prepare_header", "dgus__lcd_8c.html#ae09db7ba7f3e0e71e63617d3fd941595", null ],
     [ "buffer_u16", "dgus__lcd_8c.html#af58c7caaee845e9bc0101866ddc8eefb", null ],
     [ "buffer_u32", "dgus__lcd_8c.html#a81e46dd9468494aabe2fd9dae7398eaf", null ],
     [ "buffer_u32_1", "dgus__lcd_8c.html#a8a899ecc90ac1a4306b067e5b4e09b7e", null ],

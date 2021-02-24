@@ -5,6 +5,7 @@ var dgus__util_8h =
     [ "dgus_get_page", "dgus__util_8h.html#a56ca2e40ccb54da8afe07ea2f4bf997f", null ],
     [ "dgus_get_system_config", "dgus__util_8h.html#a476f13bed198c0a6ba4a9deb43a7cd2f", null ],
     [ "dgus_get_volume", "dgus__util_8h.html#a4007d40750f23f82bed9bd004a84b6e4", null ],
+    [ "dgus_play_sound", "dgus__util_8h.html#a4766312ef5c716893941e18981b9d7c7", null ],
     [ "dgus_set_brightness", "dgus__util_8h.html#ad4508e051a4395a13bbbb4b3c8991c7c", null ],
     [ "dgus_set_icon", "dgus__util_8h.html#ac89086b550c8fbf3cef39fefce6d28cb", null ],
     [ "dgus_set_page", "dgus__util_8h.html#af4fe01f758edb4680010c6c3f94b5675", null ],

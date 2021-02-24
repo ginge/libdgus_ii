@@ -1,8 +1,10 @@
 <map id="/github/workspace/dgus_util.h" name="/github/workspace/dgus_util.h">
-<area shape="rect" id="node1" title="DGUS II LCD Driver Utility functions @license." alt="" coords="373,5,533,47"/>
-<area shape="rect" id="node2" href="$dgus_8h.html" title="DGUS II LCD Driver." alt="" coords="368,95,539,121"/>
-<area shape="rect" id="node6" href="$dgus__util_8c.html" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="557,169,717,211"/>
-<area shape="rect" id="node3" href="$dgus__control__curve_8h.html" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="5,169,165,211"/>
-<area shape="rect" id="node4" href="$dgus__control__text_8h.html" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="189,169,349,211"/>
-<area shape="rect" id="node5" href="$dgus__lcd_8c.html" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="373,169,533,211"/>
+<area shape="rect" id="node1" title="DGUS II LCD Driver Utility functions." alt="" coords="287,5,447,47"/>
+<area shape="rect" id="node2" href="$dgus_8h.html" title="DGUS II LCD Driver." alt="" coords="281,95,452,121"/>
+<area shape="rect" id="node8" href="$dgus__util_8c.html" title="DGUS II LCD Driver Utility functions." alt="" coords="655,169,815,211"/>
+<area shape="rect" id="node3" href="$dgus__control__curve_8c.html" title="DGUS II LCD Driver Utility functions." alt="" coords="5,259,165,300"/>
+<area shape="rect" id="node4" href="$dgus__control__curve_8h.html" title="DGUS II LCD Driver Utility functions." alt="" coords="52,169,212,211"/>
+<area shape="rect" id="node5" href="$dgus__control__text_8c.html" title="DGUS II LCD Driver Utility functions." alt="" coords="215,259,375,300"/>
+<area shape="rect" id="node6" href="$dgus__control__text_8h_source.html" title=" " alt="" coords="287,169,447,211"/>
+<area shape="rect" id="node7" href="$dgus__lcd_8c.html" title="DGUS II LCD Driver Utility functions." alt="" coords="471,169,631,211"/>
 </map>

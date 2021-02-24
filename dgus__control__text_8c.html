@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DGUS LCD Library: /github/workspace/dgus_control_text.h File Reference</title>
+<title>DGUS LCD Library: /github/workspace/dgus_control_text.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('dgus__control__text_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('dgus__control__text_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -83,56 +83,59 @@ $(document).ready(function(){initNavTree('dgus__control__text_8h.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">/github/workspace/dgus_control_text.h File Reference</div>  </div>
+<div class="title">/github/workspace/dgus_control_text.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>DGUS II LCD Driver Utility functions @license MIT.  
+<p>DGUS II LCD Driver Utility functions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="dgus__reg_8h_source.html">dgus_reg.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="dgus_8h_source.html">dgus.h</a>&quot;</code><br />
+<code>#include &quot;dgus_control_text.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for dgus_control_text.h:</div>
+Include dependency graph for dgus_control_text.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="dgus__control__text_8h__incl.png" border="0" usemap="#a_2github_2workspace_2dgus__control__text_8h" alt=""/></div>
-<map name="a_2github_2workspace_2dgus__control__text_8h" id="a_2github_2workspace_2dgus__control__text_8h">
-<area shape="rect" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="75,5,235,47"/>
-<area shape="rect" title=" " alt="" coords="5,244,73,271"/>
-<area shape="rect" title=" " alt="" coords="171,244,235,271"/>
-<area shape="rect" href="dgus__reg_8h.html" title="DGUS II LCD Driver. Register and cointrol definitions." alt="" coords="295,244,381,271"/>
-<area shape="rect" href="dgus_8h.html" title="DGUS II LCD Driver." alt="" coords="228,95,288,121"/>
-<area shape="rect" href="dgus__util_8h.html" title="DGUS II LCD Driver Utility functions @license." alt="" coords="216,169,300,196"/>
-<area shape="rect" href="dgus__config_8h_source.html" title=" " alt="" coords="90,169,191,196"/>
+<div class="center"><img src="dgus__control__text_8c__incl.png" border="0" usemap="#a_2github_2workspace_2dgus__control__text_8c" alt=""/></div>
+<map name="a_2github_2workspace_2dgus__control__text_8c" id="a_2github_2workspace_2dgus__control__text_8c">
+<area shape="rect" title="DGUS II LCD Driver Utility functions." alt="" coords="251,5,411,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,69,121"/>
+<area shape="rect" title=" " alt="" coords="94,95,154,121"/>
+<area shape="rect" title=" " alt="" coords="178,95,241,121"/>
+<area shape="rect" title=" " alt="" coords="297,319,361,345"/>
+<area shape="rect" title=" " alt="" coords="682,319,750,345"/>
+<area shape="rect" title=" " alt="" coords="805,95,862,121"/>
+<area shape="rect" href="dgus_8h.html" title="DGUS II LCD Driver." alt="" coords="474,169,534,196"/>
+<area shape="rect" href="dgus__control__text_8h_source.html" title=" " alt="" coords="317,95,451,121"/>
+<area shape="rect" href="dgus__reg_8h.html" title="DGUS II LCD Driver. Register and cointrol definitions." alt="" coords="388,319,473,345"/>
+<area shape="rect" href="dgus__util_8h.html" title="DGUS II LCD Driver Utility functions." alt="" coords="594,244,678,271"/>
+<area shape="rect" href="dgus__config_8h_source.html" title=" " alt="" coords="468,244,569,271"/>
 </map>
 </div>
-</div>
-<p><a href="dgus__control__text_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afd2ff8fd87f067c18b725097165804b0"><td class="memItemLeft" align="right" valign="top"><a id="afd2ff8fd87f067c18b725097165804b0"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> ((packed)) dgus_control_text_display</td></tr>
-<tr class="separator:afd2ff8fd87f067c18b725097165804b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8h.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a> (uint16_t addr, uint8_t *buf, uint8_t len)</td></tr>
-<tr class="memdesc:a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from VAR address as text Reads in 8 bit data format when using 0x02 GBK.  <a href="dgus__control__text_8h.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">More...</a><br /></td></tr>
+<tr class="memitem:a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8c.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">dgus_get_text</a> (uint16_t addr, uint8_t *buf, uint8_t len)</td></tr>
+<tr class="memdesc:a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from VAR address as text Reads in 8 bit data format when using 0x02 GBK.  <a href="dgus__control__text_8c.html#a9db7f04f2b63ab1d6fc0ea4dee5d82bd">More...</a><br /></td></tr>
 <tr class="separator:a9db7f04f2b63ab1d6fc0ea4dee5d82bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1934036cda5858fe304c1e7b9bedb1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a> (uint16_t addr, char *text)</td></tr>
-<tr class="memdesc:aa1934036cda5858fe304c1e7b9bedb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write text to the address VAR.  <a href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">More...</a><br /></td></tr>
+<tr class="memitem:aa1934036cda5858fe304c1e7b9bedb1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8c.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a> (uint16_t addr, char *text)</td></tr>
+<tr class="memdesc:aa1934036cda5858fe304c1e7b9bedb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write text to the address VAR.  <a href="dgus__control__text_8c.html#aa1934036cda5858fe304c1e7b9bedb1c">More...</a><br /></td></tr>
 <tr class="separator:aa1934036cda5858fe304c1e7b9bedb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e99db157df7a2eadd8dbc892b4716e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8h.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a> (uint16_t addr, uint16_t *vp)</td></tr>
-<tr class="memdesc:ad2e99db157df7a2eadd8dbc892b4716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write text to the address VAR and clear all text after to field length.  <a href="dgus__control__text_8h.html#ad2e99db157df7a2eadd8dbc892b4716e">More...</a><br /></td></tr>
+<tr class="memitem:ae9757a2f57a83cc158d1b73d2b2c1bd4"><td class="memItemLeft" align="right" valign="top"><a id="ae9757a2f57a83cc158d1b73d2b2c1bd4"></a>
+<a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_set_text_padded</b> (uint16_t addr, char *text, uint8_t len)</td></tr>
+<tr class="separator:ae9757a2f57a83cc158d1b73d2b2c1bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e99db157df7a2eadd8dbc892b4716e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__text_8c.html#ad2e99db157df7a2eadd8dbc892b4716e">dgus_get_text_vp</a> (uint16_t addr, uint16_t *vp)</td></tr>
+<tr class="memdesc:ad2e99db157df7a2eadd8dbc892b4716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write text to the address VAR and clear all text after to field length.  <a href="dgus__control__text_8c.html#ad2e99db157df7a2eadd8dbc892b4716e">More...</a><br /></td></tr>
 <tr class="separator:ad2e99db157df7a2eadd8dbc892b4716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d992043786fcb718c25bec22b5e9111"><td class="memItemLeft" align="right" valign="top"><a id="a3d992043786fcb718c25bec22b5e9111"></a>
 <a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_set_text_vp</b> (uint16_t addr, uint16_t vp)</td></tr>
 <tr class="separator:a3d992043786fcb718c25bec22b5e9111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9757a2f57a83cc158d1b73d2b2c1bd4"><td class="memItemLeft" align="right" valign="top"><a id="ae9757a2f57a83cc158d1b73d2b2c1bd4"></a>
-<a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_set_text_padded</b> (uint16_t addr, char *text, uint8_t len)</td></tr>
-<tr class="separator:ae9757a2f57a83cc158d1b73d2b2c1bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee0b7df73f9793a3f81aa053eeeb174"><td class="memItemLeft" align="right" valign="top"><a id="a1ee0b7df73f9793a3f81aa053eeeb174"></a>
 <a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_get_text_pos</b> (uint16_t addr, <a class="el" href="dgus__reg_8h.html#af6e91e4117be25ead20e5b73e33afc08">dgus_control_position</a> *pos)</td></tr>
 <tr class="separator:a1ee0b7df73f9793a3f81aa053eeeb174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,15 +178,9 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> (
 <tr class="memitem:a84fd4e6f184eb5a21e4ac1a78efbe209"><td class="memItemLeft" align="right" valign="top"><a id="a84fd4e6f184eb5a21e4ac1a78efbe209"></a>
 <a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_set_text_encode_mode_distance</b> (uint16_t addr, uint8_t encode_mode, uint8_t vert_distance, uint8_t horiz_distance)</td></tr>
 <tr class="separator:a84fd4e6f184eb5a21e4ac1a78efbe209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ae64ff8ab60bdb30d6471a93854700cbe"><td class="memItemLeft" align="right" valign="top"><a id="ae64ff8ab60bdb30d6471a93854700cbe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_control_text_display</b></td></tr>
-<tr class="separator:ae64ff8ab60bdb30d6471a93854700cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>DGUS II LCD Driver Utility functions @license MIT. </p>
+<div class="textblock"><p>DGUS II LCD Driver Utility functions. </p>
 <dl class="section author"><dt>Author</dt><dd>Barry Carter </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>01 Jan 2021 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -299,7 +296,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write text to the address VAR. </p>
-<dl class="section warning"><dt>Warning</dt><dd>The DGUS does not do string null termination when rendering. You will need to clear the value beforehand, or use the <a class="el" href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c" title="Write text to the address VAR.">dgus_set_text()</a></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The DGUS does not do string null termination when rendering. You will need to clear the value beforehand, or use the <a class="el" href="dgus__control__text_8c.html#aa1934036cda5858fe304c1e7b9bedb1c" title="Write text to the address VAR.">dgus_set_text()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addr</td><td>address to write to </td></tr>
@@ -316,7 +313,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dgus__control__text_8h.html">dgus_control_text.h</a></li>
+    <li class="navelem"><a class="el" href="dgus__control__text_8c.html">dgus_control_text.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

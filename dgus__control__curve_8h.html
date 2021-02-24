@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dgus__control__curve_8h.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>DGUS II LCD Driver Utility functions @license MIT.  
+<p>DGUS II LCD Driver Utility functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
@@ -102,13 +102,22 @@ Include dependency graph for dgus_control_curve.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="dgus__control__curve_8h__incl.png" border="0" usemap="#a_2github_2workspace_2dgus__control__curve_8h" alt=""/></div>
 <map name="a_2github_2workspace_2dgus__control__curve_8h" id="a_2github_2workspace_2dgus__control__curve_8h">
-<area shape="rect" title="DGUS II LCD Driver Utility functions @license MIT." alt="" coords="75,5,235,47"/>
+<area shape="rect" title="DGUS II LCD Driver Utility functions." alt="" coords="75,5,235,47"/>
 <area shape="rect" title=" " alt="" coords="5,244,73,271"/>
 <area shape="rect" title=" " alt="" coords="171,244,235,271"/>
 <area shape="rect" href="dgus__reg_8h.html" title="DGUS II LCD Driver. Register and cointrol definitions." alt="" coords="295,244,381,271"/>
 <area shape="rect" href="dgus_8h.html" title="DGUS II LCD Driver." alt="" coords="228,95,288,121"/>
-<area shape="rect" href="dgus__util_8h.html" title="DGUS II LCD Driver Utility functions @license." alt="" coords="216,169,300,196"/>
+<area shape="rect" href="dgus__util_8h.html" title="DGUS II LCD Driver Utility functions." alt="" coords="216,169,300,196"/>
 <area shape="rect" href="dgus__config_8h_source.html" title=" " alt="" coords="90,169,191,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="dgus__control__curve_8h__dep__incl.png" border="0" usemap="#a_2github_2workspace_2dgus__control__curve_8hdep" alt=""/></div>
+<map name="a_2github_2workspace_2dgus__control__curve_8hdep" id="a_2github_2workspace_2dgus__control__curve_8hdep">
+<area shape="rect" title="DGUS II LCD Driver Utility functions." alt="" coords="5,5,165,47"/>
+<area shape="rect" href="dgus__control__curve_8c.html" title="DGUS II LCD Driver Utility functions." alt="" coords="5,95,165,136"/>
 </map>
 </div>
 </div>
@@ -116,11 +125,9 @@ Include dependency graph for dgus_control_curve.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ada6b93ac2a33386f4d61413756cfb010"><td class="memItemLeft" align="right" valign="top"><a id="ada6b93ac2a33386f4d61413756cfb010"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CURVE_ADDRESS</b>&#160;&#160;&#160;0x0310</td></tr>
+<tr class="memitem:ada6b93ac2a33386f4d61413756cfb010"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8h.html#ada6b93ac2a33386f4d61413756cfb010">CURVE_ADDRESS</a>&#160;&#160;&#160;0x0310</td></tr>
 <tr class="separator:ada6b93ac2a33386f4d61413756cfb010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476a0acab62cdd392cf27195594ca6fc"><td class="memItemLeft" align="right" valign="top"><a id="a476a0acab62cdd392cf27195594ca6fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CURVE_HEADER</b>&#160;&#160;&#160;0x5AA5</td></tr>
+<tr class="memitem:a476a0acab62cdd392cf27195594ca6fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8h.html#a476a0acab62cdd392cf27195594ca6fc">CURVE_HEADER</a>&#160;&#160;&#160;0x5AA5</td></tr>
 <tr class="separator:a476a0acab62cdd392cf27195594ca6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -150,10 +157,41 @@ Variables</h2></td></tr>
 <tr class="separator:a3b47bf7d2899684ba60ae8445dfff987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>DGUS II LCD Driver Utility functions @license MIT. </p>
+<div class="textblock"><p>DGUS II LCD Driver Utility functions. </p>
 <dl class="section author"><dt>Author</dt><dd>Barry Carter </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>01 Jan 2021 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ada6b93ac2a33386f4d61413756cfb010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6b93ac2a33386f4d61413756cfb010">&#9670;&nbsp;</a></span>CURVE_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURVE_ADDRESS&#160;&#160;&#160;0x0310</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VAR address to write each datapoint to </p>
+
+</div>
+</div>
+<a id="a476a0acab62cdd392cf27195594ca6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476a0acab62cdd392cf27195594ca6fc">&#9670;&nbsp;</a></span>CURVE_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURVE_HEADER&#160;&#160;&#160;0x5AA5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CMD header to enable write mode </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a437606f52533593399e1a5ffdce27566"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a437606f52533593399e1a5ffdce27566">&#9670;&nbsp;</a></span>__attribute__()</h2>
 
