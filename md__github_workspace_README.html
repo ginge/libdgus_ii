@@ -105,16 +105,25 @@ Setup</h1>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Example</h1>
 <p>Contained is main.c example code. This is entirely geared to my personal setup. Use as you wish</p>
-<p>` // init the library with our callbacks dgus_init(_serial_bytes_available_callback, _serial_recv_byte_callback, _serial_send_data_callback, _serial_recv_packet_callback);</p>
-<p>// set the first page dgus_set_page(2);</p>
-<p>//update a var attached to a text control dgus_set_text_padded(0x6000, "Hi. I'm padded with spaces", 32);</p>
-<p>// do a partial update of the text dgus_set_text(0x6001, "! "); // Hi. I'm padded with spaces =&gt; Hi! I'm... `</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<div class="fragment"><div class="line"><span class="comment">// init the library with our callbacks</span></div>
+<div class="line"><a class="code" href="dgus_8h.html#a0981ca39798a5ea084e6c8100dc31675">dgus_init</a>(_serial_bytes_available_callback, _serial_recv_byte_callback, _serial_send_data_callback, _serial_recv_packet_callback);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// set the first page</span></div>
+<div class="line"><a class="code" href="dgus__util_8c.html#af4fe01f758edb4680010c6c3f94b5675">dgus_set_page</a>(2);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//update a var attached to a text control</span></div>
+<div class="line">dgus_set_text_padded(0x6000, <span class="stringliteral">&quot;Hi. I&#39;m padded with spaces&quot;</span>, 32);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// do a partial update of the text</span></div>
+<div class="line"><a class="code" href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a>(0x6001, <span class="stringliteral">&quot;! &quot;</span>); <span class="comment">// Hi. I&#39;m padded with spaces =&gt; Hi! I&#39;m...</span></div>
+<div class="ttc" id="adgus_8h_html_a0981ca39798a5ea084e6c8100dc31675"><div class="ttname"><a href="dgus_8h.html#a0981ca39798a5ea084e6c8100dc31675">dgus_init</a></div><div class="ttdeci">void dgus_init(ser_available_handler_cb avail, ser_recv_handler_cb recv, ser_send_handler_cb send, packet_handler_cb packet_handler)</div><div class="ttdoc">Initialise the DGUS LCD interface.</div><div class="ttdef"><b>Definition:</b> dgus_lcd.c:70</div></div>
+<div class="ttc" id="adgus__control__text_8h_html_aa1934036cda5858fe304c1e7b9bedb1c"><div class="ttname"><a href="dgus__control__text_8h.html#aa1934036cda5858fe304c1e7b9bedb1c">dgus_set_text</a></div><div class="ttdeci">DGUS_RETURN dgus_set_text(uint16_t addr, char *text)</div><div class="ttdoc">Write text to the address VAR.</div><div class="ttdef"><b>Definition:</b> dgus_control_text.c:37</div></div>
+<div class="ttc" id="adgus__util_8c_html_af4fe01f758edb4680010c6c3f94b5675"><div class="ttname"><a href="dgus__util_8c.html#af4fe01f758edb4680010c6c3f94b5675">dgus_set_page</a></div><div class="ttdeci">DGUS_RETURN dgus_set_page(uint8_t page)</div><div class="ttdoc">Change DGUS page.</div><div class="ttdef"><b>Definition:</b> dgus_util.c:18</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
 Arduino</h1>
 <p>TODO but tl;dr</p>
-<p>` dgus_init(SERIAL1.available, SERIAL1.recv, SERIAL1.write, myapp_packet_received);</p>
-<p>` </p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line"><a class="code" href="dgus_8h.html#a0981ca39798a5ea084e6c8100dc31675">dgus_init</a>(SERIAL1.available, SERIAL1.recv, SERIAL1.write, myapp_packet_received);</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
