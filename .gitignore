@@ -1,0 +1,15 @@
+doc/latex/
+doc/html
+dgusmain
+dgusmain-debug
+
+#files being edited
+*~
+
+# make and build files
+*.lst
+*.o
+*.eep
+*.lss
+*.map
+*.sym
