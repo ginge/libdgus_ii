@@ -52,5 +52,5 @@ var searchData=
   ['dgus_5ftimeout_64',['DGUS_TIMEOUT',['../dgus__reg_8h.html#ae12e3bdce19c5555b6580c30397dddea',1,'dgus_reg.h']]],
   ['dgus_5futil_2ec_65',['dgus_util.c',['../dgus__util_8c.html',1,'']]],
   ['dgus_5futil_2eh_66',['dgus_util.h',['../dgus__util_8h.html',1,'']]],
-  ['dwin_20dgus_20ii_20lcd_20display_20driver_67',['DWIN DGUS II Lcd Display Driver',['../md__github_workspace_README.html',1,'']]]
+  ['dwin_20dgus_20ii_20lcd_20display_20driver_67',['DWIN DGUS II Lcd Display Driver',['../index.html',1,'']]]
 ];

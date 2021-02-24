@@ -22,32 +22,36 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
-var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html",children:[
-{text:"_",url:"globals.html#index__5F"},
-{text:"a",url:"globals.html#index_a"},
-{text:"b",url:"globals.html#index_b"},
-{text:"c",url:"globals.html#index_c"},
-{text:"d",url:"globals.html#index_d"},
-{text:"h",url:"globals.html#index_h"},
-{text:"i",url:"globals.html#index_i"},
-{text:"m",url:"globals.html#index_m"},
-{text:"p",url:"globals.html#index_p"},
-{text:"q",url:"globals.html#index_q"},
-{text:"r",url:"globals.html#index_r"},
-{text:"s",url:"globals.html#index_s"},
-{text:"v",url:"globals.html#index_v"},
-{text:"z",url:"globals.html#index_z"}]},
-{text:"Functions",url:"globals_func.html",children:[
-{text:"_",url:"globals_func.html#index__5F"},
-{text:"b",url:"globals_func.html#index_b"},
-{text:"d",url:"globals_func.html#index_d"},
-{text:"s",url:"globals_func.html#index_s"}]},
-{text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
-{text:"Enumerations",url:"globals_enum.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+var NAVTREE =
+[
+  [ "DGUS LCD Library", "index.html", [
+    [ "DWIN DGUS II Lcd Display Driver", "index.html", [
+      [ "Features", "index.html#autotoc_md1", null ],
+      [ "Feature in the works", "index.html#autotoc_md2", null ],
+      [ "Features i'm considering", "index.html#autotoc_md3", null ],
+      [ "Why use this screen?", "index.html#autotoc_md4", null ],
+      [ "Setup", "index.html#autotoc_md5", null ],
+      [ "Example", "index.html#autotoc_md6", null ],
+      [ "Arduino", "index.html#autotoc_md7", null ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"dgus_8h.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
