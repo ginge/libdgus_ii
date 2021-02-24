@@ -4,7 +4,6 @@
  * @author Barry Carter
  * @date 01 Jan 2021
  * @brief DGUS II LCD Driver Utility functions
- * @license 
  */
 #include <stddef.h>
 #include <stdint.h>
@@ -125,3 +124,14 @@ DGUS_RETURN dgus_system_reset(uint8_t full_reset);
  * @return #DGUS_RETURN 
  */
 DGUS_RETURN dgus_get_system_config(dgus_cmd_system_config *config);
+
+/**
+ * @brief PLay a stored wav by id
+ * 
+ * @param sound_id id of the wav from the designer
+ * @param section_id section of the wav to play
+ * @param volume 
+ * @param play_mode 0x0 stop, 0x1 pause, 0x2 play || or  section_id to loop back to (firmware version dependant)
+ * @return #DGUS_RETURN 
+ */
+DGUS_RETURN dgus_play_sound(uint8_t sound_id, uint8_t section_id, uint8_t volume, uint8_t play_mode);

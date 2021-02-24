@@ -3,7 +3,6 @@
  * @author Barry Carter
  * @date 01 Jan 2021
  * @brief DGUS II LCD Driver Utility functions
- * @license MIT
  */
 #include <string.h>
 #include <stdio.h>
@@ -18,7 +17,7 @@ static uint8_t _ack_mode = ACK_MODE;
 static int _handle_packet(char *data, uint8_t cmd, uint8_t len);
 
 
-void _delay(int ms) 
+static void _delay(int ms) 
 {  
     // Storing start time 
     clock_t start_time = clock(); 
@@ -78,7 +77,7 @@ void dgus_init(ser_available_handler_cb avail, ser_recv_handler_cb recv, ser_sen
 
 }
 
-void _prepare_header(dgus_packet_header *header, uint16_t cmd, uint16_t len) {
+static void _prepare_header(dgus_packet_header *header, uint16_t cmd, uint16_t len) {
   header->header0 = HEADER0;
   header->header1 = HEADER1;
   header->len =len + 1;

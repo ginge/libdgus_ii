@@ -4,7 +4,6 @@
  * @author Barry Carter
  * @date 01 Jan 2021
  * @brief DGUS II LCD Driver Utility functions
- * @license MIT
  */
 
 /* Curve */
@@ -18,8 +17,8 @@
  */
 typedef struct curve curve;
 
-#define CURVE_ADDRESS 0x0310
-#define CURVE_HEADER  0x5AA5
+#define CURVE_ADDRESS 0x0310   /**< VAR address to write each datapoint to */
+#define CURVE_HEADER  0x5AA5   /**< CMD header to enable write mode */
 
 /**
  * @brief SP Structure for realtime curve control

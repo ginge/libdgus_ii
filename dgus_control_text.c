@@ -1,9 +1,8 @@
 /**
- * @file dgus_control_text.h
+ * @file dgus_control_text.c
  * @author Barry Carter
  * @date 01 Jan 2021
  * @brief DGUS II LCD Driver Utility functions
- * @license MIT
  */
 #include <string.h>
 #include <stdio.h>
