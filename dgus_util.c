@@ -31,12 +31,12 @@ DGUS_RETURN dgus_set_icon(uint16_t icon_addr, uint8_t val) {
   return dgus_set_var(icon_addr, val);
 }
 
-DGUS_RETURN dgus_play_sound(uint8_t sound_id, uint8_t section_id, uint8_t volume, uint8_t repeat_to_section_id) {
+DGUS_RETURN dgus_play_sound(uint8_t sound_id, uint8_t section_id, uint8_t volume, uint8_t play_mode) {
   dgus_cmd_music m = {
     .start_id = sound_id,
     .section_id = section_id,
     .volume = volume,
-    .loop_to_id = repeat_to_section_id
+    .play_mode = play_mode
   };
   return dgus_set_var8(MusicPlaySet, (uint8_t *)&m, sizeof(m));
 }
