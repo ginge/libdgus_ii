@@ -14,6 +14,7 @@ var dgus_8h =
     [ "buffer_u32", "dgus_8h.html#a81e46dd9468494aabe2fd9dae7398eaf", null ],
     [ "buffer_u32_1", "dgus_8h.html#a8a899ecc90ac1a4306b067e5b4e09b7e", null ],
     [ "buffer_u8", "dgus_8h.html#a064da1328b879fb44e908c6fb066abfa", null ],
+    [ "dgus_get_cmd", "dgus_8h.html#a787c1dbf65df1b02a5a3dd070d6a4823", null ],
     [ "dgus_get_var", "dgus_8h.html#ac5681bfe7438c6bd478475a0a4264de1", null ],
     [ "dgus_get_var8", "dgus_8h.html#ab85df590139cb92ab418fc5fa7131dad", null ],
     [ "dgus_init", "dgus_8h.html#a0981ca39798a5ea084e6c8100dc31675", null ],
@@ -23,6 +24,7 @@ var dgus_8h =
     [ "dgus_packet_set_len", "dgus_8h.html#a2082aa82a78d318129b9914e09dba90e", null ],
     [ "dgus_recv_data", "dgus_8h.html#ab0c784556b9867fe790d8fc284e12fdd", null ],
     [ "dgus_request_var", "dgus_8h.html#aa47d54f3331fa56af8ebaa1b39401d5c", null ],
+    [ "dgus_set_cmd", "dgus_8h.html#aaa854595b4b8fc370334b65c3b372e87", null ],
     [ "dgus_set_var", "dgus_8h.html#a2bab6260bec1d9444a5283aad8bcf3b7", null ],
     [ "dgus_set_var8", "dgus_8h.html#a574d21e0512cdbe04b3db3536ae63da9", null ],
     [ "send_data", "dgus_8h.html#a65fead48691e9c7dbe0fdc0d2d331d50", null ]

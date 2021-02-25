@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dgus_5fpacket_161',['dgus_packet',['../dgus_8h.html#a72f98f026007a845e3bd6a0ef05e3f35',1,'dgus.h']]]
+  ['curve_5fdata_210',['curve_data',['../dgus__control__curve_8c.html#aa56e387173ff3aeb48007dddd41d688b',1,'dgus_control_curve.c']]]
 ];

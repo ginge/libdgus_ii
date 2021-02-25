@@ -123,8 +123,7 @@ Include dependency graph for dgus_control_curve.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa56e387173ff3aeb48007dddd41d688b"><td class="memItemLeft" align="right" valign="top"><a id="aa56e387173ff3aeb48007dddd41d688b"></a>
-typedef struct curve_data_t&#160;</td><td class="memItemRight" valign="bottom"><b>curve_data</b></td></tr>
+<tr class="memitem:aa56e387173ff3aeb48007dddd41d688b"><td class="memItemLeft" align="right" valign="top">typedef struct curve_data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8c.html#aa56e387173ff3aeb48007dddd41d688b">curve_data</a></td></tr>
 <tr class="separator:aa56e387173ff3aeb48007dddd41d688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -138,8 +137,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a8bc2178061a0938aeb15d0dd2e934fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8c.html#a8bc2178061a0938aeb15d0dd2e934fc3">dgus_curve_init_channel</a> (curve *cur, uint8_t channel_id)</td></tr>
 <tr class="memdesc:a8bc2178061a0938aeb15d0dd2e934fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise a channel.  <a href="dgus__control__curve_8c.html#a8bc2178061a0938aeb15d0dd2e934fc3">More...</a><br /></td></tr>
 <tr class="separator:a8bc2178061a0938aeb15d0dd2e934fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa610acf13b05c2b9dbb05ecb3dab0e9e"><td class="memItemLeft" align="right" valign="top"><a id="aa610acf13b05c2b9dbb05ecb3dab0e9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_curve_destroy</b> (curve *cur)</td></tr>
+<tr class="memitem:aa610acf13b05c2b9dbb05ecb3dab0e9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8c.html#aa610acf13b05c2b9dbb05ecb3dab0e9e">dgus_curve_destroy</a> (curve *cur)</td></tr>
+<tr class="memdesc:aa610acf13b05c2b9dbb05ecb3dab0e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a curve buffer and all.  <a href="dgus__control__curve_8c.html#aa610acf13b05c2b9dbb05ecb3dab0e9e">More...</a><br /></td></tr>
 <tr class="separator:aa610acf13b05c2b9dbb05ecb3dab0e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42200024f9fb0ee21b618ef8e85082b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dgus__reg_8h.html#a2550675a2efa8f92cb2feccdf8f48404">DGUS_RETURN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8c.html#a42200024f9fb0ee21b618ef8e85082b5">dgus_curve_add_data</a> (curve *cur, uint8_t chan_id, uint16_t data)</td></tr>
 <tr class="memdesc:a42200024f9fb0ee21b618ef8e85082b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append some data to the curve buffer for batch sending.  <a href="dgus__control__curve_8c.html#a42200024f9fb0ee21b618ef8e85082b5">More...</a><br /></td></tr>
@@ -153,15 +152,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_curve_destroy</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af0b96770635f94bf0f3c15b83247c72c"><td class="memItemLeft" align="right" valign="top"><a id="af0b96770635f94bf0f3c15b83247c72c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>dgus_curve_data</b></td></tr>
+<tr class="memitem:af0b96770635f94bf0f3c15b83247c72c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dgus__control__curve_8c.html#af0b96770635f94bf0f3c15b83247c72c">dgus_curve_data</a></td></tr>
 <tr class="separator:af0b96770635f94bf0f3c15b83247c72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DGUS II LCD Driver Utility functions. </p>
 <dl class="section author"><dt>Author</dt><dd>Barry Carter </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>01 Jan 2021 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa56e387173ff3aeb48007dddd41d688b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56e387173ff3aeb48007dddd41d688b">&#9670;&nbsp;</a></span>curve_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct curve_data_t <a class="el" href="dgus__control__curve_8c.html#aa56e387173ff3aeb48007dddd41d688b">curve_data</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>local app Storage for the curve data </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ab898071398b359603a35c202e9c65f3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab898071398b359603a35c202e9c65f3b">&#9670;&nbsp;</a></span>__attribute__()</h2>
 
@@ -273,6 +287,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa610acf13b05c2b9dbb05ecb3dab0e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa610acf13b05c2b9dbb05ecb3dab0e9e">&#9670;&nbsp;</a></span>dgus_curve_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dgus_curve_destroy </td>
+          <td>(</td>
+          <td class="paramtype">curve *&#160;</td>
+          <td class="paramname"><em>cur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a curve buffer and all. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cur</td><td>curve </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8bc2178061a0938aeb15d0dd2e934fc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bc2178061a0938aeb15d0dd2e934fc3">&#9670;&nbsp;</a></span>dgus_curve_init_channel()</h2>
 
@@ -372,6 +412,22 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>DGUS_RETURN </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af0b96770635f94bf0f3c15b83247c72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b96770635f94bf0f3c15b83247c72c">&#9670;&nbsp;</a></span>dgus_curve_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dgus_curve_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Curve packet format data </p>
 
 </div>
 </div>

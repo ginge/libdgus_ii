@@ -3,7 +3,6 @@ var dgus__lcd_8c =
     [ "__attribute__", "dgus__lcd_8c.html#ab898071398b359603a35c202e9c65f3b", null ],
     [ "_polling_read_16", "dgus__lcd_8c.html#a4545b1cae3174617eb905c383fedecdb", null ],
     [ "_polling_wait", "dgus__lcd_8c.html#a2171c18185b079e81d68996a30d54c10", null ],
-    [ "_polling_wait_for_ok", "dgus__lcd_8c.html#a4c210e6b18462f0b2b33078373d6c3ef", null ],
     [ "buffer_u16", "dgus__lcd_8c.html#af58c7caaee845e9bc0101866ddc8eefb", null ],
     [ "buffer_u32", "dgus__lcd_8c.html#a81e46dd9468494aabe2fd9dae7398eaf", null ],
     [ "buffer_u32_1", "dgus__lcd_8c.html#a8a899ecc90ac1a4306b067e5b4e09b7e", null ],
@@ -22,10 +21,6 @@ var dgus__lcd_8c =
     [ "dgus_set_var", "dgus__lcd_8c.html#a2bab6260bec1d9444a5283aad8bcf3b7", null ],
     [ "dgus_set_var8", "dgus__lcd_8c.html#a574d21e0512cdbe04b3db3536ae63da9", null ],
     [ "send_data", "dgus__lcd_8c.html#a65fead48691e9c7dbe0fdc0d2d331d50", null ],
-    [ "_recv_handler", "dgus__lcd_8c.html#a6bad3d472d4e86478e1a4b098553a907", null ],
-    [ "_ser_avail_handler", "dgus__lcd_8c.html#a01c00c03b65ee94d1083159d54a590bf", null ],
-    [ "_ser_recv_handler", "dgus__lcd_8c.html#a39c7243e0a742827bb64287a68cc3943", null ],
-    [ "_ser_send_handler", "dgus__lcd_8c.html#ac6ee8d5d5f29ee5ad806dddf43f0e03d", null ],
     [ "dgus_packet_header", "dgus__lcd_8c.html#aceaa94b91e7cd9828edf80d9ad60ebd0", null ],
     [ "dgus_var_data", "dgus__lcd_8c.html#a182dc50f2fc8cd25b6126ebd2c32d260", null ]
 ];
