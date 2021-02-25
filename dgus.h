@@ -166,7 +166,7 @@ DGUS_RETURN dgus_set_var(uint16_t addr, uint32_t data);
  * @param addr 
  * @param buf 
  * @param len 
- * @return DGUS_RETURN 
+ * @return Response such as #DGUS_TIMEOUT
  */
 DGUS_RETURN dgus_get_var8(uint16_t addr, uint8_t *buf, uint8_t len);
 
@@ -176,7 +176,7 @@ DGUS_RETURN dgus_get_var8(uint16_t addr, uint8_t *buf, uint8_t len);
  * @param addr 
  * @param data 
  * @param len 
- * @return DGUS_RETURN 
+ * @return Response such as #DGUS_TIMEOUT
  */
 DGUS_RETURN dgus_set_var8(uint16_t addr, uint8_t *data, uint8_t len);
 
@@ -217,8 +217,29 @@ uint8_t _polling_wait();
  * 
  * @param buf 
  * @param len 
- * @return DGUS_RETURN 
+ * @return Response such as #DGUS_TIMEOUT
  */
 DGUS_RETURN _polling_read_16(uint8_t *buf, uint8_t len);
+
+/**
+ * @brief Set data in the cmd area of the configuration
+ * @warning writing here is super dangerous
+ * 
+ * @param addr 
+ * @param data 
+ * @param len 
+ * @return Response such as #DGUS_TIMEOUT
+ */
+DGUS_RETURN dgus_set_cmd(uint16_t addr, uint8_t *data, uint8_t len);
+
+/**
+ * @brief Get data from the cmd registers
+ * 
+ * @param addr 
+ * @param data 
+ * @param len 
+ * @return Response such as #DGUS_TIMEOUT
+ */
+DGUS_RETURN dgus_get_cmd(uint16_t addr, uint8_t *data, uint8_t len);
 
 #include "dgus_config.h"

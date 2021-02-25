@@ -2,7 +2,7 @@
  * @file dgus_control_text.c
  * @author Barry Carter
  * @date 01 Jan 2021
- * @brief DGUS II LCD Driver Utility functions
+ * @brief DGUS II LCD Text Utilites
  */
 #include <string.h>
 #include <stdio.h>
@@ -51,6 +51,7 @@ DGUS_RETURN dgus_set_text_padded(uint16_t addr, char *text, uint8_t len) {
 }
 
 /* Only work when using SP enabled. addr is SP address */
+
 DGUS_RETURN dgus_get_text_vp(uint16_t addr, uint16_t *vp) {
   return dgus_get_var(addr + offsetof(dgus_control_text_display, vp), vp, 1);
 }

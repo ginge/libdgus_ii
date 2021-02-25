@@ -29,32 +29,35 @@ static void _delay(int ms)
 
 
 /* Callback for a packet received */
-packet_handler_cb _recv_handler;
-ser_recv_handler_cb _ser_recv_handler;
-ser_send_handler_cb _ser_send_handler;
-ser_available_handler_cb _ser_avail_handler;
+static packet_handler_cb _recv_handler;                 /**< packet handler cb once deparsed */
+static ser_recv_handler_cb _ser_recv_handler;           /**< function to call to receive a single packet */
+static ser_send_handler_cb _ser_send_handler;           /**< function to call for sending data */
+static ser_available_handler_cb _ser_avail_handler;     /**< function to get number of available bytes */
 
 /* Internal recv buffers */
 static uint8_t recvlen;
 static uint8_t recvcmd;
-static uint8_t recvdata[32];
+static uint8_t recvdata[RECV_BUFFER_SIZE];              /**< recv buffer */
 
-/* A packet header that every packet needs 
+/**
+ * @brief  A packet header that every packet needs 
  * len incudes data + 1 (for cmd byte)
+ * 
+ * @return typedef struct 
  */
 typedef struct __attribute__((packed)) dgus_packet_header_t {
   uint8_t header0;
   uint8_t header1;
   uint8_t len;
   uint8_t cmd;
-} dgus_packet_header;
+} dgus_packet_header; /**< packet header structure */
 
 struct __attribute__((packed)) dgus_packet {
   dgus_packet_header header;
   union Data {
-    uint8_t cdata[32];
-    uint16_t sdata[16];
-    uint32_t ldata[8];
+    uint8_t cdata[SEND_BUFFER_SIZE];
+    uint16_t sdata[SEND_BUFFER_SIZE/2];
+    uint32_t ldata[SEND_BUFFER_SIZE/4];
   } data;
   uint8_t len;
 };
@@ -62,7 +65,7 @@ struct __attribute__((packed)) dgus_packet {
 typedef struct __attribute__((packed)) dgus_var_data_t {
   uint16_t address;
   uint16_t data[16];
-} dgus_var_data;
+} dgus_var_data; /**< Header for a VAR command */
 
 
 
@@ -74,7 +77,6 @@ void dgus_init(ser_available_handler_cb avail, ser_recv_handler_cb recv, ser_sen
   /* Intializes random number generator */
   time_t t;
   srand((unsigned) time(&t));
-
 }
 
 static void _prepare_header(dgus_packet_header *header, uint16_t cmd, uint16_t len) {
@@ -84,8 +86,12 @@ static void _prepare_header(dgus_packet_header *header, uint16_t cmd, uint16_t l
   header->cmd = cmd;
 }
 
-
-DGUS_RETURN _polling_wait_for_ok() {
+/**
+ * @brief polling wait for data. wait until we timeout
+ * 
+ * @return Response such as #DGUS_TIMEOUT
+ */
+static DGUS_RETURN _polling_wait_for_ok() {
   // there is no expected ack, so return like we got one
   if (_ack_mode == ACK_MODE_OK_DISABLED)
     return DGUS_OK;
@@ -101,7 +107,7 @@ DGUS_RETURN _polling_wait_for_ok() {
     // timeout
     _delay(1);
     if (timer == 0) {
-      printf("TIMEOUT ON OK!\n");
+      DEBUG_PRINTF("TIMEOUT ON OK!\n");
       return DGUS_TIMEOUT;
     }
     timer--;
@@ -115,7 +121,7 @@ DGUS_RETURN _polling_wait() {
     // timeout
     _delay(1);
     if (timer == 0) {
-      printf("TIMEOUT!\n");
+      DEBUG_PRINTF("TIMEOUT!\n");
       return DGUS_TIMEOUT;
     }
     timer--;
@@ -127,14 +133,14 @@ DGUS_RETURN _polling_wait() {
 DGUS_RETURN send_data(enum command cmd, dgus_packet *p) {
   _prepare_header(&p->header, cmd, p->len);
   for (int i = 0; i < sizeof(p->header); i++) {
-    printf("0x%x ", *((uint8_t *)&p->header + i));
+    DEBUG_PRINTF("0x%x ", *((uint8_t *)&p->header + i));
   }
-  printf(" | ");
+  DEBUG_PRINTF(" | ");
 
   for (int i = 0; i < p->len; i++) {
-    printf("0x%x ", *((uint8_t *)p + i + offsetof(dgus_packet, data)));
+    DEBUG_PRINTF("0x%x ", *((uint8_t *)p + i + offsetof(dgus_packet, data)));
   }
-  printf("\n");
+  DEBUG_PRINTF("\n");
   if (_ser_send_handler)
     _ser_send_handler((uint8_t *)p, sizeof(p->header) + p->len);
 
@@ -375,7 +381,7 @@ static int _handle_packet(char *data, uint8_t cmd, uint8_t len) {
 
   if(len == 0x02 && (cmd == DGUS_CMD_VAR_W || cmd == DGUS_CMD_REG_W) 
       && (data[0] == 'O') && (data[1] == 'K')) {    //response for writing byte 
-    printf("OK\n");
+    DEBUG_PRINTF("OK\n");
     return PACKET_OK;
   }
   else if(cmd == DGUS_CMD_VAR_R) {
@@ -397,11 +403,11 @@ static int _handle_packet(char *data, uint8_t cmd, uint8_t len) {
     }
   }
 
-  printf("CMD 0x%02x : PLEN %d : LEN %d : ADDR 0x%02x : DATA: ", cmd, len, bytelen, addr);
+  DEBUG_PRINTF("CMD 0x%02x : PLEN %d : LEN %d : ADDR 0x%02x : DATA: ", cmd, len, bytelen, addr);
   for (uint8_t i = 0; i < bytelen; i+=2) {
-    printf("0x%04x ", (uint16_t)*(uint16_t *)(data + i));
+    DEBUG_PRINTF("0x%04x ", (uint16_t)*(uint16_t *)(data + i));
   }
-  printf("\n");
+  DEBUG_PRINTF("\n");
 
   if (_recv_handler) 
     _recv_handler(data, cmd, len, addr, bytelen);

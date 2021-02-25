@@ -91,3 +91,10 @@ DGUS_RETURN dgus_curve_add_data(curve *cur, uint8_t chan_id, uint16_t data);
  * @return DGUS_RETURN 
  */
 DGUS_RETURN dgus_curve_reset(curve *cur, uint8_t chan_id);
+
+/**
+ * @brief Destroy a curve buffer and all
+ * 
+ * @param cur curve
+ */
+void dgus_curve_destroy(curve *cur);

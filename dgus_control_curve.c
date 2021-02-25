@@ -18,7 +18,7 @@ typedef struct curve_data_t {
   uint8_t capacity_words;
   uint8_t used_words;
   uint16_t *data;
-} curve_data;
+} curve_data; /**< local app Storage for the curve data */
 
 struct curve {
   uint8_t channel_count;
@@ -30,13 +30,13 @@ struct curve {
 typedef struct __attribute__((packed)) dgus_curve_data_t {
   uint8_t channels; // bit field of channels to update
   uint16_t data[16];
-} dgus_curve_data;
+} dgus_curve_data; /**< Curve packet format data */
 
 curve *dgus_curve_buffer_create(uint8_t num_curves, uint8_t datapoint_buffer_len) {
   size_t sz = sizeof(curve) + 
               (sizeof(curve_data) * num_curves);
   curve *c = calloc(1, sz);
-  printf("SZ %ld\n", sz);
+  DEBUG_PRINTF("SZ %ld\n", sz);
   if (!c)
     return NULL;
 
@@ -103,7 +103,7 @@ DGUS_RETURN dgus_curve_send_data(curve *cur) {
     
     curve_data *cd = &cur->curves[i];
     if (cd->used_words == 0) {
-      printf("C \n");
+      DEBUG_PRINTF("C \n");
       temp8 = cur->_initted_count - 1;
       // decrement the amount of channels we are sending
       dgus_packet_set_data(d, 4, &temp8, 1);
